@@ -5,7 +5,14 @@ array.each do |arr|
   # puts result[arr]
  result[arr] += 1
 end
-puts result
+# puts result
 
 
 
+a0 = [ :foo, :bar ]
+a1 = [ :baz, :bat ]
+h = {a0 => 0, a1 => 1}
+puts h
+h.include?(a0) # => true
+h[a0] # => 0
+a0.hash # => 110002110
